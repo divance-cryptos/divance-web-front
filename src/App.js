@@ -1,9 +1,10 @@
+import { Link, Route } from "wouter";
+import Home from "../src/pages/Home";
+
 const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-
-      </header>
+        <Route component={Home} path="/"></Route>
     </div>
   );
 }
