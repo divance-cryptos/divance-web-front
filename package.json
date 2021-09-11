@@ -17,7 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "run:cypress": "cypress run"
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
