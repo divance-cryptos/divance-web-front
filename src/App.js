@@ -1,3 +1,4 @@
+import './styles/global.css'
 import { Route } from "wouter";
 import Home from "../src/pages/Home";
 

@@ -4,6 +4,6 @@ import Home from "./Home";
 
 it("renders learn react link", async () => {
   render(<Home />);
-  const linkElement = await screen.findByText(/home/i);
+  const linkElement = await screen.findByText(/divance/i);
   expect(linkElement).toBeInTheDocument();
 });
