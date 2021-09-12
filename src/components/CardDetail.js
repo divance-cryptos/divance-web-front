@@ -26,11 +26,8 @@ const LiveDetail = ({ watchLink, thumb }) => {
   return (
     <Container>
       <ItemCover>
-        <Image src={require(`../assets/${thumb}.png`).default} alt="" width="260px" />
+        <a href={watchLink}><Image src={require(`../assets/${thumb}.png`).default} alt="" width="260px" /></a>
       </ItemCover>
-      <ItemLinks>
-        <a href={watchLink}><Button>Watch</Button></a>
-      </ItemLinks>
     </Container>
   );
 };
