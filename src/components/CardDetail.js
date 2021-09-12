@@ -1,7 +1,5 @@
-import { useState, useEffect } from "react";
 import styled from "@emotion/styled";
 import Button from "./Button";
-import logo from '../assets/talkdefi.png';
 
 const Container = styled.div`
     display: flex;
@@ -25,25 +23,10 @@ const Image = styled.img`
 `
 
 const LiveDetail = ({ watchLink, thumb }) => {
-  const [, setImage] = useState('');
-  const loadImage = thumb => {
-    if (thumb) {
-      import(`../assets/${thumb}.png`).then(image => {
-        setImage({
-          image
-        });
-      });
-    }
-  };
-
-  useEffect(() => {
-    loadImage(thumb);
-  }, [thumb])
-
   return (
     <Container>
       <ItemCover>
-        <Image src={logo} alt="" />
+        <Image src={require(`../assets/${thumb}.png`).default} alt="" width="260px" />
       </ItemCover>
       <ItemLinks>
         <a href={watchLink}><Button>Watch</Button></a>

@@ -14,14 +14,13 @@ const CardsItem = styled.div`
   padding-right: 8px;
 `
 
-const LiveSection = ({ lives }) => {
-  console.log(lives.map(live => console.log('live', live)))
+const SectionCard = ({data}) => {
   return (
     <Cards>
       {
-        lives.map((live) => {
-          return <CardsItem key={live.id}>
-            <CardDetail thumb={live.thumb} watchLink={live.watchLink} ></CardDetail>
+        data.map((row) => {
+          return <CardsItem key={row.id}>
+            <CardDetail thumb={row.thumb} watchLink={row.watchLink} ></CardDetail>
           </CardsItem>
         })
       }
@@ -29,4 +28,4 @@ const LiveSection = ({ lives }) => {
   );
 };
 
-export default LiveSection;
+export default SectionCard;
