@@ -2,13 +2,13 @@
   "lives": [
     {
       "id": "1",
-      "img": "http://via.placeholder.com/220x220",
-      "watch-link": ""
+      "thumb": "talkdefi",
+      "watchLink": "https://www.twitch.tv/divance_twitch"
     },
     {
       "id": "2",
-      "img": "http://via.placeholder.com/220x220",
-      "watch-link": ""
+      "thumb": "talkdefi",
+      "watchLink": "https://www.twitch.tv/divance_twitch"
     }
   ]
 }

@@ -1,4 +1,5 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
+import CardDetail from './CardDetail';
 
 const Cards = styled.div`
   display: flex;
@@ -20,8 +21,7 @@ const LiveSection = ({ lives }) => {
       {
         lives.map((live) => {
           return <CardsItem key={live.id}>
-            <img src={live.img} alt=''/>
-            <button>Watch</button>
+            <CardDetail thumb={live.thumb} watchLink={live.watchLink} ></CardDetail>
           </CardsItem>
         })
       }
