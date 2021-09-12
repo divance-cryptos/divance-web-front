@@ -8,34 +8,45 @@ const Nav = styled.header`
   color: #000000;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 `
 
-// const DiscordButton = styled.button`
-//   background-color: #4CAF50; /* Green */
-//   border: none;
-//   color: white;
-//   padding: 15px 32px;
-//   text-align: center;
-//   text-decoration: none;
-//   display: inline-block;
-//   font-size: 16px;
-//   cursor: pointer;
-// `
+const NavItem = styled.div`
+  display: flex;
+`
 
 const NavLogo = styled.img`
+  height: 40px;
+`
+
+const DiscordButton = styled.img`
+  padding-left: 1px;
+  height: 40px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+`
+
+const TelegramButton = styled.img`
+  padding-left: 1px;
+  height: 40px;
 `
 
 const NavBrand = styled.h3`
-  padding-top: 17px;
-  padding-left: 5px;
 `
 
 const Header = () => {
   return (
     <Nav data-testid="header">
-      <NavLogo src={logo}/>
-      <NavBrand data-testid="header-title">Divance Crypto Dev Community</NavBrand>
-      {/* <DiscordButton href="https://t.me/joinchat/21JvwZi7TA1hMDA8">Discord</DiscordButton> */}
+      <NavItem>
+        <NavLogo src={logo}/>
+      </NavItem>
+      <NavItem>
+        <NavBrand data-testid="header-title">Divance Crypto Dev Community</NavBrand>
+      </NavItem>
+      <NavItem>
+        <a href="https://discord.gg/AwrM7xYkvF"><DiscordButton src={require('../assets/discord.png').default} /></a>
+        {/* <a href="https://t.me/joinchat/21JvwZi7TA1hMDA8"><TelegramButton src={require('../assets/telegram.png').default} /></a> */}
+      </NavItem>
     </Nav>
   )
 };
