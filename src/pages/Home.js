@@ -11,6 +11,10 @@ const Section = styled.div`
   padding-top: 20px;
 `
 
+const SectionTitle = styled.h2`
+  color: #ffffff;
+`
+
 const Home = () => {
   const [lives, setLives] = useState([]);
   const [youtubes, setYoutubes] = useState([]);
@@ -20,7 +24,6 @@ const Home = () => {
     const serviceYoutube = youtubeService();
     serviceLive.getLives()
       .then(livesData => {
-        console.log('livesData', livesData)
         setLives(livesData)
       })
     serviceYoutube.getYoutubes()
@@ -31,11 +34,11 @@ const Home = () => {
     <>
       <Header />
       <Section>
-        <h3>Próximos Lives</h3>
+        <SectionTitle>Próximos Lives</SectionTitle>
         <SectionCard data={lives} />
       </Section>
       <Section>
-        <h3>Youtube Videos</h3>
+        <SectionTitle>Youtube Videos</SectionTitle>
         <SectionCard data={youtubes} />
       </Section>
     </>
