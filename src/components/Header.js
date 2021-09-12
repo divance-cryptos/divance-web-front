@@ -21,9 +21,13 @@ const NavLogo = styled.img`
 `
 
 const DiscordButton = styled.img`
-  padding-left: 1px;
+  padding-right: 4px;
   height: 40px;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    transform: scale(0.8);
+  }
 `
 
 const TelegramButton = styled.img`
