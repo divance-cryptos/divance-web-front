@@ -42,6 +42,10 @@ const NavBrand = styled.h3`
 
 const Icons = styled.h3`
   margin-right: 15px;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 `
 
 const Header = () => {
