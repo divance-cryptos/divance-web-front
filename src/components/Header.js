@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import React from "react";
 import logo from "../assets/divancelogo.png";
+import { FaDiscord, FaTelegram } from 'react-icons/fa';
 
 const Nav = styled.header`
   background-color: #FFFFFF;
@@ -15,9 +16,14 @@ const Nav = styled.header`
 const NavItem = styled.div`
   display: flex;
 `
-
 const NavLogo = styled.img`
   height: 40px;
+`
+const ChatIcons = styled.span`
+  display: flex;
+  margin-right: 30px;
+  font-size: 20px;
+  color: #503484;
 `
 
 const DiscordButton = styled.img`
@@ -30,12 +36,12 @@ const DiscordButton = styled.img`
   }
 `
 
-const TelegramButton = styled.img`
-  padding-left: 1px;
-  height: 40px;
+const NavBrand = styled.h3`
+  margin-right: 30px;
 `
 
-const NavBrand = styled.h3`
+const Icons = styled.h3`
+  margin-right: 15px;
 `
 
 const Header = () => {
@@ -48,7 +54,10 @@ const Header = () => {
         <NavBrand data-testid="header-title">Divance Crypto Dev Community</NavBrand>
       </NavItem>
       <NavItem>
-        <a href="https://discord.gg/AwrM7xYkvF"><DiscordButton src={require('../assets/discord.png').default} /></a>
+        <ChatIcons>
+          <Icons> <a href="https://discord.gg/AwrM7xYkvF"><FaDiscord /></a> </Icons> 
+          <Icons> <a href="https://t.me/joinchat/21JvwZi7TA1hMDA8"><FaTelegram /></a> </Icons> 
+        </ChatIcons>
         {/* <a href="https://t.me/joinchat/21JvwZi7TA1hMDA8"><TelegramButton src={require('../assets/telegram.png').default} /></a> */}
       </NavItem>
     </Nav>
