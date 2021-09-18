@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import Button from "./Button";
 
 const Container = styled.div`
     display: flex;
@@ -11,11 +10,6 @@ const ItemCover = styled.div`
     height: 220px;
     width: 220px;
 `;
-
-const ItemLinks = styled.div`
-    flex: 1;
-    margin-top: 4px;
-`
 
 const Image = styled.img`
     height: 220px;
