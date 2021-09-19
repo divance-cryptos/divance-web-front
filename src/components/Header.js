@@ -13,6 +13,8 @@ const Nav = styled.header`
   align-items: center;
   grid-area: header;
   flex-shrink: 0;
+  width: 100%;
+  position: fixed; 
 `
 
 const NavItem = styled.div`
