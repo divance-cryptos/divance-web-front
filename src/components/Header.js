@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import React from "react";
 import logo from "../assets/divancelogo.png";
-import { FaDiscord, FaTelegram } from 'react-icons/fa';
+import { FaDiscord, FaTelegram, FaGithub } from 'react-icons/fa';
 
 const Nav = styled.header`
   background-color: #FFFFFF;
@@ -11,6 +11,8 @@ const Nav = styled.header`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  grid-area: header;
+  flex-shrink: 0;
 `
 
 const NavItem = styled.div`
@@ -51,6 +53,7 @@ const Header = () => {
         <ChatIcons>
           <Icons> <a href="https://discord.gg/AwrM7xYkvF"><FaDiscord /></a> </Icons> 
           <Icons> <a href="https://t.me/joinchat/21JvwZi7TA1hMDA8"><FaTelegram /></a> </Icons> 
+          <Icons> <a href="https://github.com/divance-cryptos"><FaGithub /></a> </Icons> 
         </ChatIcons>
         {/* <a href="https://t.me/joinchat/21JvwZi7TA1hMDA8"><TelegramButton src={require('../assets/telegram.png').default} /></a> */}
       </NavItem>

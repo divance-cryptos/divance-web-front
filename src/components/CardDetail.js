@@ -10,7 +10,7 @@ const ItemCover = styled.div`
     height: 220px;
     width: 220px;
 `;
-
+  
 const Image = styled.img`
     height: 220px;
     width: 220px;

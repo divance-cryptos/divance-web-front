@@ -9,7 +9,6 @@ const Cards = styled.div`
 `
 
 const CardsItem = styled.div`
-  flex-basis: 25%;
   padding-left: 8px;
   padding-right: 8px;
 `
