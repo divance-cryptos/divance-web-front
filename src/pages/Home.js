@@ -25,6 +25,10 @@ const Section = styled.div`
   margin: 0 auto;
   padding-top: 20px;
   margin-left: 5%;
+
+  /* ${mq["sm"]} {
+    width: 20%;
+  } */
 `
 
 const SectionTitle = styled.h2`
