@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import React from "react";
 import logo from "../assets/divancelogo.png";
-import { FaDiscord, FaTelegram, FaGithub } from 'react-icons/fa';
+import { FaDiscord, FaTelegram, FaGithub, FaYoutube, FaTwitch } from 'react-icons/fa';
 
 const Nav = styled.header`
   background-color: #FFFFFF;
@@ -14,7 +14,7 @@ const Nav = styled.header`
   grid-area: header;
   flex-shrink: 0;
   width: 100%;
-  position: fixed; 
+  position: fixed;
 `
 
 const NavItem = styled.div`
@@ -53,9 +53,11 @@ const Header = () => {
       </NavItem>
       <NavItem>
         <ChatIcons>
-          <Icons> <a href="https://discord.gg/AwrM7xYkvF"><FaDiscord /></a> </Icons> 
-          <Icons> <a href="https://t.me/joinchat/21JvwZi7TA1hMDA8"><FaTelegram /></a> </Icons> 
-          <Icons> <a href="https://github.com/divance-cryptos"><FaGithub /></a> </Icons> 
+          <Icons> <a href="https://www.youtube.com/channel/UCwDKDJvdjZvdOVwG2vWi6Rg"><FaYoutube/></a> </Icons>
+          <Icons> <a href="https://twitch.tv/divance_twitch"><FaTwitch /></a> </Icons>
+          <Icons> <a href="https://discord.gg/AwrM7xYkvF"><FaDiscord /></a> </Icons>
+          <Icons> <a href="https://t.me/joinchat/21JvwZi7TA1hMDA8"><FaTelegram /></a> </Icons>
+          <Icons> <a href="https://github.com/divance-cryptos"><FaGithub /></a> </Icons>
         </ChatIcons>
         {/* <a href="https://t.me/joinchat/21JvwZi7TA1hMDA8"><TelegramButton src={require('../assets/telegram.png').default} /></a> */}
       </NavItem>
