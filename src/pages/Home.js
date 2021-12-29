@@ -38,7 +38,7 @@ const SectionTitle = styled.h2`
 const Container = styled.div`
   display: grid;
   grid-auto-columns: auto;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows:ReactMarkdown auto 1fr auto;
   grid-template-areas:
     "header"
     "main"
@@ -137,7 +137,7 @@ const Home = () => {
             <Image src={require(`../assets/ethereum.png`).default} alt="" width="260px" />
           </ContainerRight>
         </ContainerMain>
-       {/* <Footer /> */} 
+       {/* <Footer /> */}
     </Container>
   );
 };
