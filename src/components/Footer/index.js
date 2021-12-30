@@ -1,13 +1,14 @@
 import React from "react";
-import logo from "../assets/divancelogo.png";
-import { Bar, NavItem, NavLogo } from "./style";
+import { Bar, Image } from "./style";
 
 const Footer = () => {
   return (
     <Bar data-testid="footer">
-      <NavItem>
-        <NavLogo src={logo}/>
-      </NavItem>
+       <h1>Puedes contribuir si quieres ...</h1>
+       <h3>👌 Uniendote a nuestro Discord</h3>
+       <h3>👌 Contribuye en nuestos repositorios libres</h3>
+       <h3>👌 Donación por ethereum, bsc, polygon WIP</h3>
+       <Image src={require(`../../assets/ethereum.png`).default} alt="" width="260px" />
     </Bar>
   )
 };

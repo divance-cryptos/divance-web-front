@@ -15,3 +15,12 @@ export const NavItem = styled.div`
 export const NavLogo = styled.img`
   height: 40px;
 `
+
+export const Image = styled.img`
+    height: 220px;
+    width: 220px;
+    margin: 20px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+`

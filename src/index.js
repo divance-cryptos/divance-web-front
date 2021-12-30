@@ -11,7 +11,7 @@ ReactDOM.render(
      <Header />
      <Routes>
         <Route path="/" element={<Home />} />
-      </Routes>
+    </Routes>
     </BrowserRouter>,
   </React.StrictMode>,
   document.getElementById('root')

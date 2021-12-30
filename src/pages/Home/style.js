@@ -56,15 +56,6 @@ export const ContainerLeft = styled.div`
   margin: 0 auto;
 `
 
-export const Image = styled.img`
-    height: 220px;
-    width: 220px;
-    margin: 20px;
-    padding: 5px;
-    background-color: white;
-    border-radius: 5px;
-`
-
 export const ContainerRight = styled.div`
   grid-area: sidebar;
   background-color: #000000;
