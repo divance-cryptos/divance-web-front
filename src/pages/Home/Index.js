@@ -24,7 +24,6 @@ const Home = () => {
     <>
       <Welcome />
         <ContainerMain id='main'>
-          <ContainerLeft>
             <Section>
               <SectionTitle>Próximos Lives</SectionTitle>
               <SectionCard data={lives} />
@@ -33,7 +32,6 @@ const Home = () => {
               <SectionTitle>Youtube Videos</SectionTitle>
               <SectionCard data={youtubes} />
             </Section>
-          </ContainerLeft>
         </ContainerMain>
     </>
   );

@@ -41,8 +41,6 @@ export const Container = styled.div`
 export const ContainerMain = styled.div`
   min-height: 100vh;
   margin-top: 60px;
-  margin-left: -8px;
-  margin-right: -8px;
   display: flex;
   flex-wrap: wrap;
 
