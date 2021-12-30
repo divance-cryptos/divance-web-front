@@ -1,46 +1,7 @@
-import styled from '@emotion/styled'
 import React from "react";
-import logo from "../assets/divancelogo.png";
+import logo from "../../assets/divancelogo.png";
 import { FaDiscord, FaTelegram, FaGithub, FaYoutube, FaTwitch } from 'react-icons/fa';
-
-const Nav = styled.header`
-  background-color: #FFFFFF;
-  height: 60px;
-  color: #000000;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  grid-area: header;
-  flex-shrink: 0;
-  width: 100%;
-  position: fixed;
-`
-
-const NavItem = styled.div`
-  display: flex;
-`
-const NavLogo = styled.img`
-  height: 40px;
-`
-const ChatIcons = styled.span`
-  display: flex;
-  margin-right: 30px;
-  font-size: 20px;
-  color: #503484;
-`
-
-const NavBrand = styled.h3`
-  margin-right: 30px;
-`
-
-const Icons = styled.h3`
-  margin-right: 15px;
-
-  &:hover {
-    transform: scale(1.2);
-  }
-`
+import { Nav, NavItem, NavLogo, Icons, ChatIcons, NavBrand } from "./style";
 
 const Header = () => {
   return (

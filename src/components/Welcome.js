@@ -7,8 +7,8 @@ const Cards = styled.div`
 
   margin: 20px;
   & > h1 {
-    
-  } 
+
+  }
 `
 
 const Welcome = () => {
