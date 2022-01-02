@@ -3,7 +3,7 @@ import SectionCard from "../../components/SectionCard";
 import Welcome from "../../components/Welcome";
 import liveService from "../../services/liveService";
 import youtubeService from "../../services/youtubeService";
-import { ContainerMain, ContainerLeft, Section, SectionTitle } from './style';
+import { ContainerMain, Section, SectionTitle } from './style';
 
 const Home = () => {
   const [lives, setLives] = useState([]);
