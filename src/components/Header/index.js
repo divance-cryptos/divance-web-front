@@ -16,7 +16,7 @@ const Header = () => {
         <ChatIcons>
           <Icons> <a href="https://www.youtube.com/channel/UCwDKDJvdjZvdOVwG2vWi6Rg"><FaYoutube/></a> </Icons>
           <Icons> <a href="https://twitch.tv/divance_twitch"><FaTwitch /></a> </Icons>
-          <Icons> <a href="https://discord.gg/AwrM7xYkvF"><FaDiscord /></a> </Icons>
+          <Icons> <a href="https://discord.gg/fXP5juJqQa"><FaDiscord /></a> </Icons>
           <Icons> <a href="https://t.me/joinchat/21JvwZi7TA1hMDA8"><FaTelegram /></a> </Icons>
           <Icons> <a href="https://github.com/divance-cryptos"><FaGithub /></a> </Icons>
         </ChatIcons>
